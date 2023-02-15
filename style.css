@@ -47,8 +47,42 @@ li a {
 }
 .fa-solid {
     text-align: center;
-    color: white;
+    color:black;
+    margin: 20px auto 0 auto;
 }
+.leaf-drops{
+    display: flex;
+    justify-content: space-around;
+    z-index:1;
+}
+
+.fa-flower-tulip{
+    color:#009193;
+    
+}
+
+.t1{
+    animation: leafdrop 10s linear 0s infinite;
+}
+
+.t2{
+    animation: leafdrop 10s linear 2s infinite;
+}
+
+@keyframes leafdrop{
+    from {
+        transform: translate3d(0,0,0);
+    }
+    to {
+        transform: translate3d(0,800px,0);
+    }
+}
+
+li::marker{
+    content:"";
+}
+
+
 .first {
     height: 200px;
     width: 100%;
